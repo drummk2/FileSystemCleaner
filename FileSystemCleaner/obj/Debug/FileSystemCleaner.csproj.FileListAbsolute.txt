@@ -1,0 +1,7 @@
+D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.exe.config
+D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.exe
+D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.pdb
+D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csproj.CoreCompileInputs.cache
+D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.exe
+D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.pdb
+D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csprojResolveAssemblyReference.cache
