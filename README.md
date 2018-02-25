@@ -6,8 +6,7 @@ A simple tool that can be used to clean up one's file system. This cleaning proc
 * Deleting all files older than a given time period from a specified root directory
     
 This tool is used on the command line in the following way.
-
-* Remove empty directories (receive confirmation before every folder is deleted)</br>
+FileSystemCleaner.exe /empty
 
 * Remove empty directories (no confirmation given)</br>
 FileSystemCleaner.exe /empty /quiet
