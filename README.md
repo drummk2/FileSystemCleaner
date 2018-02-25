@@ -8,7 +8,11 @@ A simple tool that can be used to clean up one's file system. This cleaning proc
 This tool is used on the command line in the following way.
 
 * Remove empty directories (confirmation given before every folder is deleted)</br>
+```bat
 FileSystemCleaner.exe /empty
+```
 
 * Remove empty directories (no confirmation given)</br>
+```bat
 FileSystemCleaner.exe /empty /quiet
+```
