@@ -2,8 +2,5 @@
 {
     internal class TempDirectoryCleaner
     {
-        internal static void Clean()
-        {
-        }
     }
 }

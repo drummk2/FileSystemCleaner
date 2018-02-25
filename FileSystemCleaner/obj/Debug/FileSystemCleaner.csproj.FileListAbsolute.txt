@@ -5,3 +5,10 @@ D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\obj\Debug\FileSystemCleane
 D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.exe
 D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.pdb
 D:\DotNetProjects\FileSystemCleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csprojResolveAssemblyReference.cache
+D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.exe.config
+D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.exe
+D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.pdb
+D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csproj.CoreCompileInputs.cache
+D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.exe
+D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.pdb
+D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csprojResolveAssemblyReference.cache
