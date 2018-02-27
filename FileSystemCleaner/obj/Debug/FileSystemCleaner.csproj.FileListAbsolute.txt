@@ -11,4 +11,3 @@ D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\bin\Debug\FileSyste
 D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csproj.CoreCompileInputs.cache
 D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.exe
 D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.pdb
-D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csprojResolveAssemblyReference.cache

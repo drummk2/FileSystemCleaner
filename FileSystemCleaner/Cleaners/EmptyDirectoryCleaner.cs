@@ -1,16 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using FileSystemCleaner.Interfaces;
+using System.Collections.Generic;
 using System.IO;
 
-namespace FileSystemCleaner
+namespace FileSystemCleaner.Cleaners
 {
-    internal static class EmptyDirectoryCleaner
+    internal class EmptyDirectoryCleaner : ICleaner
     {
-        internal static void Init(string currentDir, bool isQuiet)
+        public void Init(string currentDir, bool isQuiet)
         {
+            System.Console.WriteLine(isQuiet);
             new List<string>(Directory.GetDirectories(currentDir)).ForEach(dir => Clean(dir, isQuiet));
         }
 
-        private static void Clean(string currentDir, bool isQuiet)
+        private void Clean(string currentDir, bool isQuiet)
         {
             new List<string>(Directory.GetDirectories(currentDir)).ForEach(dir => Clean(dir, isQuiet));
 
@@ -18,14 +20,14 @@ namespace FileSystemCleaner
             {
                 if (isQuiet)
                 {
+                    Directory.Delete(currentDir);
+                }
+                else
+                {
                     if (Utilities.GetDeleteConfirmation(currentDir))
                     {
                         Directory.Delete(currentDir);
                     }
-                }
-                else
-                {
-                    Directory.Delete(currentDir);
                 }
             }
         }
