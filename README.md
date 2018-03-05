@@ -21,3 +21,8 @@ FileSystemCleaner.exe /empty
 ```bat
 FileSystemCleaner.exe /empty /quiet
 ```
+
+* Clear the TEMP directory
+```bat
+FileSystemCleaner.exe /temp
+```
