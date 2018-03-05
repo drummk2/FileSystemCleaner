@@ -7,7 +7,7 @@ namespace FileSystemCleaner
         internal static bool GetDeleteConfirmation(string currentDir)
         {
             Console.Write("Delete " + currentDir + "? <y/n> ");
-            return Console.ReadLine().Equals("y", StringComparison.InvariantCultureIgnoreCase);
+            return Console.ReadLine()[0].ToString().Equals("y", StringComparison.InvariantCultureIgnoreCase);
         }
     }
 }

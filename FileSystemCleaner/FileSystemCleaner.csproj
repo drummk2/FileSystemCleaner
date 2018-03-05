@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Cleaners\EmptyDirectoryCleaner.cs" />
     <Compile Include="Cleaners\OldFileCleaner.cs" />
-    <Compile Include="Interfaces\ICleaner.cs" />
+    <Compile Include="Bases\CleanerBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cleaners\TempDirectoryCleaner.cs" />

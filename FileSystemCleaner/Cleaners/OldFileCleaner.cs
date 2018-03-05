@@ -1,10 +1,10 @@
-﻿using FileSystemCleaner.Interfaces;
+﻿using FileSystemCleaner.Bases;
 
 namespace FileSystemCleaner.Cleaners
 {
-    internal class OldFileCleaner : ICleaner
+    internal class OldFileCleaner : CleanerBase
     {
-        public void Init(string currentDir, bool isQuiet)
+        public override void Init(string currentDir, bool isQuiet)
         {
             throw new System.NotImplementedException();
         }

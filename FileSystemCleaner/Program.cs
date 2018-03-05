@@ -1,5 +1,5 @@
-﻿using FileSystemCleaner.Cleaners;
-using FileSystemCleaner.Interfaces;
+﻿using FileSystemCleaner.Bases;
+using FileSystemCleaner.Cleaners;
 using System;
 using System.Collections.Generic;
 
@@ -16,10 +16,10 @@ namespace FileSystemCleaner
             }
 
             string action = args[0].Replace('/', ' ').Trim().ToLower();
-            string quietFlag = (args.Length > 1) ? args[1].Replace('/', ' ').Trim() : string.Empty;
-            bool isQuiet = quietFlag.Equals("quiet", StringComparison.InvariantCultureIgnoreCase);
+            string quietFlag = (args.Length > 1) ? args[1].Replace('/', ' ').Trim().ToLower() : string.Empty;
+            bool isQuiet = quietFlag.Equals("quiet");
 
-            Dictionary<string, ICleaner> cleaners = new Dictionary<string, ICleaner>
+            Dictionary<string, CleanerBase> cleaners = new Dictionary<string, CleanerBase>
             {
                 { "empty", new EmptyDirectoryCleaner() },
                 { "old", new OldFileCleaner() },
@@ -28,7 +28,7 @@ namespace FileSystemCleaner
 
             if (action.Equals("all"))
             {
-                foreach (ICleaner cleaner in cleaners.Values)
+                foreach (CleanerBase cleaner in cleaners.Values)
                 {
                     cleaner.Init(Environment.CurrentDirectory, isQuiet);
                 }

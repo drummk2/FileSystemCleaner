@@ -1,12 +1,21 @@
-﻿using FileSystemCleaner.Interfaces;
+﻿using FileSystemCleaner.Bases;
+using System.IO;
 
 namespace FileSystemCleaner.Cleaners
 {
-    internal class TempDirectoryCleaner : ICleaner
+    internal class TempDirectoryCleaner : CleanerBase
     {
-        public void Init(string currentDir, bool isQuiet)
+        public override void Init(string currentDir, bool isQuiet)
         {
-            throw new System.NotImplementedException();
+            foreach (string dir in Directory.EnumerateDirectories(Path.GetTempPath()))
+            {
+                try { Directory.Delete(dir, true); } catch (IOException) { }
+            }
+
+            foreach (string file in Directory.EnumerateFiles(Path.GetTempPath()))
+            {
+                try { File.Delete(file); } catch (IOException) { }
+            }
         }
     }
 }
