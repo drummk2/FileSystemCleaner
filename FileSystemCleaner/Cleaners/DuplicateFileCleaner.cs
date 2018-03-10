@@ -1,6 +1,6 @@
 ﻿using FileSystemCleaner.Bases;
-using System.IO;
 using System.Collections.Generic;
+using System.IO;
 
 namespace FileSystemCleaner.Cleaners
 {
