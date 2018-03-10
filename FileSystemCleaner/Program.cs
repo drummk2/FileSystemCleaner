@@ -21,6 +21,7 @@ namespace FileSystemCleaner
 
             Dictionary<string, CleanerBase> cleaners = new Dictionary<string, CleanerBase>
             {
+                { "duplicate", new DuplicateFileCleaner() },
                 { "empty", new EmptyDirectoryCleaner() },
                 { "old", new OldFileCleaner() },
                 { "temp", new TempDirectoryCleaner() }

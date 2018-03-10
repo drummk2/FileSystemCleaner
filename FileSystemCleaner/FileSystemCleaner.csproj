@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cleaners\DuplicateFileCleaner.cs" />
     <Compile Include="Cleaners\EmptyDirectoryCleaner.cs" />
     <Compile Include="Cleaners\OldFileCleaner.cs" />
     <Compile Include="Bases\CleanerBase.cs" />
