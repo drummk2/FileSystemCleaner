@@ -1,4 +1,5 @@
 ﻿using FileSystemCleaner.Bases;
+using System;
 using System.IO;
 
 namespace FileSystemCleaner.Cleaners
@@ -7,6 +8,7 @@ namespace FileSystemCleaner.Cleaners
     {
         public override void Init(string currentDir, bool isQuiet)
         {
+            Console.WriteLine("Clearing TEMP directory");
             foreach (string dir in Directory.EnumerateDirectories(Path.GetTempPath()))
             {
                 try { Directory.Delete(dir, true); } catch (IOException) { }

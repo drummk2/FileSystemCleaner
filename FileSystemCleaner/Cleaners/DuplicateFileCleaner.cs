@@ -1,4 +1,5 @@
 ﻿using FileSystemCleaner.Bases;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -8,6 +9,7 @@ namespace FileSystemCleaner.Cleaners
     {
         public override void Init(string currentDir, bool isQuiet)
         {
+            Console.WriteLine("Deleting duplicate files...");
             Clean(currentDir, isQuiet);
         }
 
