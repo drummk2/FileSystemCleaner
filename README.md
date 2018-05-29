@@ -13,17 +13,17 @@ This tool is used on the command line in the following way.
 FileSystemCleaner.exe /all
 ```
 
-* Remove duplicate files (confirmation given before every folder is deleted)</br>
+* Remove duplicate files (confirmation needed before every folder is deleted)</br>
 ```bat
 FileSystemCleaner.exe /duplicate
 ```
 
-* Remove empty directories (confirmation given before every folder is deleted)</br>
+* Remove empty directories (confirmation needed before every folder is deleted)</br>
 ```bat
 FileSystemCleaner.exe /empty
 ```
 
-* Remove empty directories (no confirmation given)</br>
+* Remove empty directories (no confirmation needed)</br>
 ```bat
 FileSystemCleaner.exe /empty /quiet
 ```
