@@ -11,3 +11,10 @@ D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\bin\Debug\FileSyste
 D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csproj.CoreCompileInputs.cache
 D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.exe
 D:\DevelopmentProjects\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.pdb
+C:\Users\Kieron\source\repos\File_System_Cleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.exe.config
+C:\Users\Kieron\source\repos\File_System_Cleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.exe
+C:\Users\Kieron\source\repos\File_System_Cleaner\FileSystemCleaner\bin\Debug\FileSystemCleaner.pdb
+C:\Users\Kieron\source\repos\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csprojAssemblyReference.cache
+C:\Users\Kieron\source\repos\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.csproj.CoreCompileInputs.cache
+C:\Users\Kieron\source\repos\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.exe
+C:\Users\Kieron\source\repos\File_System_Cleaner\FileSystemCleaner\obj\Debug\FileSystemCleaner.pdb
