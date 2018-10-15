@@ -5,6 +5,9 @@ using System.IO;
 
 namespace FileSystemCleaner.Cleaners
 {
+    /// <summary>
+    /// A Cleaner class that will remove all empty directories from a user's file system.
+    /// </summary>
     internal class EmptyDirectoryCleaner : CleanerBase
     {
         private static string rootDir;
@@ -16,6 +19,11 @@ namespace FileSystemCleaner.Cleaners
             Clean(currentDir, isQuiet);
         }
 
+        /// <summary>
+        /// Remove all empty directories from a user's file system.
+        /// </summary>
+        /// <param name="currentDir">The current directory in which to execute the cleaner.</param>
+        /// <param name="isQuiet">Whether or not the specified cleaner should run quietly.</param>
         private void Clean(string currentDir, bool isQuiet)
         {
             new List<string>(Directory.GetDirectories(currentDir)).ForEach(dir => Clean(dir, isQuiet));

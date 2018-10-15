@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 namespace FileSystemCleaner
 {
+    /// <summary>
+    /// The main program. Runs any cleaners that have been called.
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)

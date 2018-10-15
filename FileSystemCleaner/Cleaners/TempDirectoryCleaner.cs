@@ -4,6 +4,9 @@ using System.IO;
 
 namespace FileSystemCleaner.Cleaners
 {
+    /// <summary>
+    /// A simple cleaner for clearing out a user's TEMP directory.
+    /// </summary>
     internal class TempDirectoryCleaner : CleanerBase
     {
         public override void Init(string currentDir, bool isQuiet)

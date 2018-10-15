@@ -5,6 +5,9 @@ using System.IO;
 
 namespace FileSystemCleaner.Cleaners
 {
+    /// <summary>
+    /// A Cleaner class for deleting old files off of a user's file system.
+    /// </summary>
     internal class OldFileCleaner : CleanerBase
     {
         public override void Init(string currentDir, bool isQuiet)
@@ -13,12 +16,17 @@ namespace FileSystemCleaner.Cleaners
             Clean(currentDir, isQuiet);
         }
 
+        /// <summary>
+        /// Remove all files on a user's computer system that have not been written to in roughly 3 months.
+        /// </summary>
+        /// <param name="currentDir">The current directory in which to execute the cleaner.</param>
+        /// <param name="isQuiet">Whether or not the specified cleaner should run quietly.</param>
         private void Clean(string currentDir, bool isQuiet)
         {
             new List<string>(Directory.GetDirectories(currentDir)).ForEach(dir => Clean(dir, isQuiet));
 
             new List<string>(Directory.EnumerateFiles(currentDir)).ForEach(file => {
-                if (DateTime.Now - File.GetLastWriteTime(file) > TimeSpan.FromDays(1))
+                if (DateTime.Now - File.GetLastWriteTime(file) > TimeSpan.FromDays(90))
                 {
                     if (isQuiet)
                     {
