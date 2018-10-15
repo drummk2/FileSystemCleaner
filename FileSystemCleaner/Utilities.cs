@@ -8,7 +8,7 @@ namespace FileSystemCleaner
     internal class Utilities
     {
         /// <summary>
-        /// Get confirmation from a user as to whether a file of directory should be deleted.
+        /// Get confirmation from a user as to whether a file or directory should be deleted.
         /// </summary>
         /// <param name="currentDir"></param>
         /// <returns>Whether or not the user has confirmed the deletion.</returns>
