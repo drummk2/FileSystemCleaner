@@ -2,6 +2,7 @@
 using FileSystemCleaner.Cleaners;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace FileSystemCleaner
 {
@@ -31,16 +32,9 @@ namespace FileSystemCleaner
             };
 
             if (action.Equals("all"))
-            {
-                foreach (CleanerBase cleaner in cleaners.Values)
-                {
-                    cleaner.Init(Environment.CurrentDirectory, isQuiet);
-                }
-            }
+                cleaners.Values.ToList().ForEach(c => c.Init(Environment.CurrentDirectory, isQuiet));
             else
-            {
                 cleaners[action].Init(Environment.CurrentDirectory, isQuiet);
-            }
         }
     }
 }
