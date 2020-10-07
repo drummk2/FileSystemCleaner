@@ -10,8 +10,16 @@ namespace FileSystemCleaner.Cleaners
     /// </summary>
     internal class EmptyDirectoryCleaner : CleanerBase
     {
+        /// <summary>
+        /// The directory from which the search for empty directories begins.
+        /// </summary>
         private static string rootDir;
 
+        /// <summary>
+        /// Initialise rootDir and then begin searching for duplicate directories.
+        /// </summary>
+        /// <param name="currentDir">The current directory in which to execute the cleaner.</param>
+        /// <param name="isQuiet">Whether or not the specified cleaner should run quietly.</param>
         public override void Init(string currentDir, bool isQuiet)
         {
             Console.WriteLine("Deleting empty directories...");

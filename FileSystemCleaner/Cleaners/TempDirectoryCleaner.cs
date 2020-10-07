@@ -9,7 +9,10 @@ namespace FileSystemCleaner.Cleaners
     /// </summary>
     internal class TempDirectoryCleaner : CleanerBase
     {
-        public override void Init(string currentDir, bool isQuiet)
+        /// <summary>
+        /// Delete all directories and files within the TEMP directory.
+        /// </summary>
+        public void Init()
         {
             Console.WriteLine("Clearing TEMP directory");
             foreach (string dir in Directory.EnumerateDirectories(Path.GetTempPath()))

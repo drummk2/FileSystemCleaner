@@ -10,6 +10,11 @@ namespace FileSystemCleaner.Cleaners
     /// </summary>
     internal class DuplicateFileCleaner : CleanerBase
     {
+        /// <summary>
+        /// Print to the console and then begin the search for duplicate files.
+        /// </summary>
+        /// <param name="currentDir">The current directory in which to execute the cleaner.</param>
+        /// <param name="isQuiet">The default value for this will be false for security reasons.</param>
         public override void Init(string currentDir, bool isQuiet)
         {
             Console.WriteLine("Deleting duplicate files...");

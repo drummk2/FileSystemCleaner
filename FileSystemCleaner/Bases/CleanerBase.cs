@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FileSystemCleaner.Bases
+﻿namespace FileSystemCleaner.Bases
 {
     /// <summary>
     /// A base class to represent different types of Cleaner objects.

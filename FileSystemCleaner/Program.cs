@@ -20,7 +20,7 @@ namespace FileSystemCleaner
             }
 
             string action = args[0].Replace('/', ' ').Trim().ToLower();
-            string quietFlag = (args.Length > 1) ? args[1].Replace('/', ' ').Trim().ToLower() : string.Empty;
+            string quietFlag = args[1]?.Replace('/', ' ').Trim().ToLower() ?? string.Empty;
             bool isQuiet = quietFlag.Equals("quiet");
 
             Dictionary<string, CleanerBase> cleaners = new Dictionary<string, CleanerBase>

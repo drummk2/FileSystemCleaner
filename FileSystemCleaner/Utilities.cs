@@ -10,7 +10,7 @@ namespace FileSystemCleaner
         /// <summary>
         /// Get confirmation from a user as to whether a file or directory should be deleted.
         /// </summary>
-        /// <param name="currentDir"></param>
+        /// <param name="fileOrDirName">The name of the file/directory that is being deleted.</param>
         /// <returns>Whether or not the user has confirmed the deletion.</returns>
         internal static bool GetDeleteConfirmation(string fileOrDirName)
         {
