@@ -1,5 +1,5 @@
-﻿using FileSystemCleaner.Bases;
-using FileSystemCleaner.Cleaners;
+﻿using FileSystemCleaner.Cleaners;
+using FileSystemCleaner.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,10 +20,10 @@ namespace FileSystemCleaner
             }
 
             string action = args[0].Replace('/', ' ').Trim().ToLower();
-            string quietFlag = args[1]?.Replace('/', ' ').Trim().ToLower() ?? string.Empty;
+            string quietFlag = args.ElementAtOrDefault(1)?.Replace('/', ' ').Trim().ToLower() ?? string.Empty;
             bool isQuiet = quietFlag.Equals("quiet");
 
-            Dictionary<string, CleanerBase> cleaners = new Dictionary<string, CleanerBase>
+            Dictionary<string, ICleaner> cleaners = new Dictionary<string, ICleaner>
             {
                 { "duplicate", new DuplicateFileCleaner() },
                 { "empty", new EmptyDirectoryCleaner() },

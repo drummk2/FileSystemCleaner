@@ -14,7 +14,7 @@ namespace FileSystemCleaner
         /// <returns>Whether or not the user has confirmed the deletion.</returns>
         internal static bool GetDeleteConfirmation(string fileOrDirName)
         {
-            Console.Write("Delete " + fileOrDirName + "? <y/n> ");
+            Console.Write($"Delete {fileOrDirName} + ? <y/n> ");
             return Console.ReadLine()[0].ToString().Equals("y", StringComparison.InvariantCultureIgnoreCase);
         }
     }

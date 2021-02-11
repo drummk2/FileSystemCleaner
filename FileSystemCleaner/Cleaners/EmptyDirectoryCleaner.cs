@@ -1,4 +1,4 @@
-﻿using FileSystemCleaner.Bases;
+﻿using FileSystemCleaner.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ namespace FileSystemCleaner.Cleaners
     /// <summary>
     /// A Cleaner class that will remove all empty directories from a user's file system.
     /// </summary>
-    internal class EmptyDirectoryCleaner : CleanerBase
+    internal class EmptyDirectoryCleaner : ICleaner
     {
         /// <summary>
         /// The directory from which the search for empty directories begins.
@@ -20,7 +20,7 @@ namespace FileSystemCleaner.Cleaners
         /// </summary>
         /// <param name="currentDir">The current directory in which to execute the cleaner.</param>
         /// <param name="isQuiet">Whether or not the specified cleaner should run quietly.</param>
-        public override void Init(string currentDir, bool isQuiet)
+        public void Init(string currentDir, bool isQuiet)
         {
             Console.WriteLine("Deleting empty directories...");
             rootDir = currentDir;

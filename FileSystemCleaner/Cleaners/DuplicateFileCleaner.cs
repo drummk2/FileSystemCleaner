@@ -1,4 +1,4 @@
-﻿using FileSystemCleaner.Bases;
+﻿using FileSystemCleaner.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,14 +8,14 @@ namespace FileSystemCleaner.Cleaners
     /// <summary>
     /// A Cleaner class that can remove any duplicate files on a user's file system.
     /// </summary>
-    internal class DuplicateFileCleaner : CleanerBase
+    internal class DuplicateFileCleaner : ICleaner
     {
         /// <summary>
         /// Print to the console and then begin the search for duplicate files.
         /// </summary>
         /// <param name="currentDir">The current directory in which to execute the cleaner.</param>
         /// <param name="isQuiet">The default value for this will be false for security reasons.</param>
-        public override void Init(string currentDir, bool isQuiet)
+        public void Init(string currentDir, bool isQuiet)
         {
             Console.WriteLine("Deleting duplicate files...");
             Clean(currentDir, isQuiet);
