@@ -1,4 +1,4 @@
-# File_System_Cleaner
+# FileSystemCleaner
 
 A simple tool that can be used to clean up one's file system. This cleaning process consists of some menial tasks such as:
 * Deleting all duplicate files starting from the directory from which the exe is executed
