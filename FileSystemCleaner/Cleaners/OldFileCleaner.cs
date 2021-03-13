@@ -7,7 +7,7 @@ using System.IO;
 namespace FileSystemCleaner.Cleaners
 {
     /// <summary>
-    /// A Cleaner class for deleting old files off of a user's file system.
+    /// A cleaner for deleting old files off of a user's file system.
     /// </summary>
     internal class OldFileCleaner : ICleaner
     {

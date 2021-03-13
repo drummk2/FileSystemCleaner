@@ -6,7 +6,7 @@ using System.IO;
 namespace FileSystemCleaner.Cleaners
 {
     /// <summary>
-    /// A Cleaner class that will remove all empty directories from a user's file system.
+    /// A cleaner that will remove all empty directories from a user's file system.
     /// </summary>
     internal class EmptyDirectoryCleaner : ICleaner
     {

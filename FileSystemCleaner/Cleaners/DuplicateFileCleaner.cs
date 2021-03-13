@@ -6,7 +6,7 @@ using System.IO;
 namespace FileSystemCleaner.Cleaners
 {
     /// <summary>
-    /// A Cleaner class that can remove any duplicate files on a user's file system.
+    /// A cleaner that can remove any duplicate files on a user's file system.
     /// </summary>
     internal class DuplicateFileCleaner : ICleaner
     {
