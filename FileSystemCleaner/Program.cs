@@ -36,7 +36,7 @@ namespace FileSystemCleaner
             else if (cleaners.ContainsKey(action))
                 cleaners[action].Init(Environment.CurrentDirectory, isQuiet);
             else
-                Console.WriteLine("Please provide a valid action (/duplicate, /empty, /old, /temp"));
+                Console.WriteLine("Please provide a valid action (/duplicate, /empty, /old, /temp)");
         }
     }
 }
